@@ -1,0 +1,7 @@
+package com.lec.dao;
+
+public class PersonDao {
+	public static PersonDao INSTANCE = new PersonDao();
+	
+	private PersonDao() {};
+}

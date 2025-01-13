@@ -1,0 +1,22 @@
+package com.lec.service;
+
+import java.sql.Date;
+
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class InsertService implements Service {
+
+	public void execute(HttpServletRequest request, HttpServletResponse response) {
+		// name, tel, address, birth, memo 파라미터 받아 insert해 결과를 request에 setAttribute
+		String name = request.getParameter("name");
+		String tel = request.getParameter("tel");
+		String address = request.getParameter("address");
+		String birthStr = request.getParameter("birth");
+		Date birth = null;
+		if(!birthStr.equals("")) {
+			birth = Date.valueOf(birthStr);
+		}
+	}
+
+}

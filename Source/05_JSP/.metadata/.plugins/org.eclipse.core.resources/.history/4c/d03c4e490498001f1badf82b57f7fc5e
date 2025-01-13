@@ -1,0 +1,28 @@
+package com.lec.service;
+
+import com.lec.dao.PersonRepository;
+
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class ListService implements Service {
+
+	public void execute(HttpServletRequest request, HttpServletResponse response) {
+		// pageNum파라미터 받아, startRow, endRow 계산 => getPerson(startRow, endRow) => getPersonList(startRow, endRow)
+		// pageCnt, startpage, endPage 계산후 view단으로 넘길 데이터 request에 setAttribute
+		// list.do나 list.do?pageNum=7
+		String pageNum = request.getParameter("pageNum");
+		if(pageNum==null) {
+			pageNum = "1";
+		}
+		int currentPage = Integer.parseInt(pageNum); // 숫자형 현재 페이지번호
+		final int PAGESIZE=10, BLOCKSIZE=10;
+		int startRow = (currentPage - 1)*PAGESIZE + 1;
+		int endRow = startRow + PAGESIZE -1;
+		PersonRepository dao = PersonRepository.getInstance();
+		request.setAttribute("personList", dao.getPersonList(startRow, endRow)); // 출력할 목록
+		int totCnt = dao.getCount(); // 전체 DB 데이터 수
+		int pageCnt = Math.ceil((double)totCnt/PAGESIZE);
+	}
+
+}

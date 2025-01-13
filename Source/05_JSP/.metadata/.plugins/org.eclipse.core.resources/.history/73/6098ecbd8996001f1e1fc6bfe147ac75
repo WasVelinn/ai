@@ -1,0 +1,23 @@
+package com.lec.ch12.dao;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+import com.lec.ch12.dto.Member;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+@WebServlet("/memberDaoTest")
+public class MemberRepositoryTest extends HttpServlet{
+	
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		MemberRepository repository = MemberRepository.getInstance();
+		ArrayList<Member> members = repository.getMemberList();
+		for(Member member : members) {
+			System.out.println(member);
+		}
+	}
+}

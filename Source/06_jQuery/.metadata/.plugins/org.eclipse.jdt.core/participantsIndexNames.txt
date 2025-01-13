@@ -1,0 +1,7 @@
+INDEX VERSION 1.134
+D:\STUDENTS\KIMCHEOLMIN\ai\Source\06_jQuery\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2339157376.index
+\ch01\src\main\java
+D:\STUDENTS\KIMCHEOLMIN\ai\Source\06_jQuery\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4270910966.index
+\ch02_ajax\src\main\java
+D:\STUDENTS\KIMCHEOLMIN\ai\Source\06_jQuery\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1916450433.index
+\ch02_ajax\src\main\java

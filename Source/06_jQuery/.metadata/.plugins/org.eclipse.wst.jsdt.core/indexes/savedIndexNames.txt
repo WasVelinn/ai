@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+D:\STUDENTS\KIMCHEOLMIN\ai\Source\06_jQuery\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3898054515.index
+4270910966.index
+2570202697.index
+2003780851.index
+1856377429.index
+193829154.index
+211174730.index

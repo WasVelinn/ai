@@ -1,0 +1,24 @@
+package com.lec.service;
+
+import java.sql.Date;
+
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class UpdateService2 implements Service {
+
+	public void execute(HttpServletRequest request, HttpServletResponse response) {
+		// id, name, tel, address, birth, memo 중 빈스트링이 아닌 값만 수정
+		int id = Integer.parseInt(request.getParameter("id"));
+		String name = request.getParameter("name");
+		String tel = request.getParameter("tel");
+		String address = request.getParameter("address");
+		String birthStr = request.getParameter("birth");
+		Date birth = null;
+		if(!birthStr.equals("")) {
+			birth = Date.valueOf(birthStr);
+		}
+		String memo = request.getParameter("memo");
+	}
+
+}

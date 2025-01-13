@@ -1,0 +1,11 @@
+127.0.0.1 - - [04/Nov/2024:09:59:44 +0900] "GET / HTTP/1.1" 404 808
+0:0:0:0:0:0:0:1 - - [04/Nov/2024:09:59:46 +0900] "GET /ch02_ajax/1_get_post_ajax/3_ajax.jsp HTTP/1.1" 200 1667
+0:0:0:0:0:0:0:1 - - [04/Nov/2024:09:59:46 +0900] "GET /favicon.ico HTTP/1.1" 404 819
+0:0:0:0:0:0:0:1 - - [04/Nov/2024:09:59:48 +0900] "POST /ch02_ajax/1_get_post_ajax/midConfirm.jsp HTTP/1.1" 200 294
+0:0:0:0:0:0:0:1 - - [04/Nov/2024:10:00:12 +0900] "POST /ch02_ajax/1_get_post_ajax/midConfirm.jsp HTTP/1.1" 200 294
+0:0:0:0:0:0:0:1 - - [04/Nov/2024:10:10:36 +0900] "GET /ch02_ajax/2_memberJoin/join.jsp HTTP/1.1" 200 4347
+0:0:0:0:0:0:0:1 - - [04/Nov/2024:10:10:36 +0900] "GET /ch02_ajax/css/join.css HTTP/1.1" 200 894
+0:0:0:0:0:0:0:1 - - [04/Nov/2024:10:10:38 +0900] "GET /ch02_ajax/1_get_post_ajax/midConfirm.jsp?id=dd HTTP/1.1" 200 294
+0:0:0:0:0:0:0:1 - - [04/Nov/2024:10:10:39 +0900] "GET /ch02_ajax/1_get_post_ajax/midConfirm.jsp?id=ddd HTTP/1.1" 200 294
+0:0:0:0:0:0:0:1 - - [04/Nov/2024:10:10:39 +0900] "GET /ch02_ajax/1_get_post_ajax/midConfirm.jsp?id=dddd HTTP/1.1" 200 294
+0:0:0:0:0:0:0:1 - - [04/Nov/2024:10:10:40 +0900] "GET /ch02_ajax/1_get_post_ajax/midConfirm.jsp?id=ddddc HTTP/1.1" 200 294

@@ -1,0 +1,10 @@
+package com.lec.dao;
+
+public class PersonRepository {
+	public static final int SUCCESS = 1;
+	public static final int FAIL = 0;
+	
+	public static PersonRepository INSTANCE = new PersonRepository();
+	
+	private PersonRepository() {};
+}
