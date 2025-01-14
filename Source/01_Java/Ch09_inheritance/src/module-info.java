@@ -4,5 +4,5 @@
 /**
  * 
  */
-module Ch09_inheritance {
+module ch09_inheritance {
 }

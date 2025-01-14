@@ -4,5 +4,5 @@
 /**
  * 
  */
-module Ch02_variable {
+module ch02_variable {
 }

@@ -1,7 +1,0 @@
-package com.lec.dao;
-
-public class EmpDao {
-	// 싱글톤
-	private static EmpDao INSTANCE = new EmpDao();
-	private EmpDao() {}
-}

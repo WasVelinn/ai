@@ -4,5 +4,5 @@
 /**
  * 
  */
-module Ch06_method {
+module ch06_method {
 }

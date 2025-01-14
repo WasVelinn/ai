@@ -4,5 +4,5 @@
 /**
  * 
  */
-module Ch08_accessStatic {
+module ch08_accessStatic {
 }

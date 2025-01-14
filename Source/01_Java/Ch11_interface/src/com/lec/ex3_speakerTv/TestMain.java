@@ -1,5 +1,4 @@
 package com.lec.ex3_speakerTv;
-
 public class TestMain {
 	public static void main(String[] args) {
 		IVolume[] devices = {new Speaker(), new Tv()};

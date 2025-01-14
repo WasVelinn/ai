@@ -9,7 +9,7 @@ public class AccessTestMain {
 //		System.out.println(obj.defaultMember);
 //		System.out.println(obj.protectedMember);
 		System.out.println(obj.publicMember);
-		//obj.privateMethod();
+		// obj.privateMethod();
 //		obj.defaultMethod();
 //		obj.protectedMethod();
 		obj.publicMethod();

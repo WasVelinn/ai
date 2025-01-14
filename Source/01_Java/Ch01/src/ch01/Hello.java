@@ -1,5 +1,5 @@
 package ch01;
-// 한 줄 주석
+// 한줄 주석
 public class Hello {
 	public static void main(String[] args) {
 		/* System은 Java에서 제공하는 꾸러미(API=라이브러리)
@@ -7,7 +7,5 @@ public class Hello {
 		 */
 		System.out.println("Hello, Java");
 		System.out.println('H');
-		
 	}
-
 }

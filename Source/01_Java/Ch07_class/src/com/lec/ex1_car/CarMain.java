@@ -2,19 +2,33 @@ package com.lec.ex1_car;
 
 public class CarMain {
 	public static void main(String[] args) {
-		Car myCar = new Car();
-		myCar.setColor("빨강");
-		myCar.setCc(2400);
-		System.out.println(myCar.getColor()+"색차량 배기량은 "+myCar.getCc()+", 속도는"+myCar.getSpeed());
-		myCar.drive();
-		myCar.park();
-		myCar.race();
-		System.out.println(myCar.getColor()+"색차량 배기량은 "+myCar.getCc()+", 속도는"+myCar.getSpeed());
-		
-		Car yourCar = new Car();
-		yourCar.setColor("보라");
-		yourCar.drive();
-		System.out.println(yourCar.getColor()+"색차량 배기량은 "+yourCar.getCc()+", 속도는"+yourCar.getSpeed());
+		Car myPorsche = new Car();
+		//myPorsche.color="빨강";
+		myPorsche.setColor("빨강");
+		//myPorsche.cc = 2400;
+		myPorsche.setCc(2400);
+		System.out.println(myPorsche.getColor() + "색차량 배기량은 " + 
+				myPorsche.getCc() + ", 속도는 " + myPorsche.getSpeed());
+		myPorsche.drive();
+		myPorsche.park();
+		myPorsche.race();
+		System.out.println(myPorsche.getColor() + "색차량 배기량은 " + 
+				myPorsche.getCc() + ", 속도는 " + myPorsche.getSpeed());
+		Car yourPorsche = new Car();
+		//yourPorsche.color = "gray";
+		yourPorsche.setColor("gray");
+		yourPorsche.drive();
+		System.out.println(myPorsche.getColor() + "색차량 배기량은 " + 
+				myPorsche.getCc() + ", 속도는 " + myPorsche.getSpeed());
+		System.out.println(yourPorsche.getColor() + "색차량 배기량은 " + 
+				yourPorsche.getCc() + ", 속도는 " + yourPorsche.getSpeed());
 	}
-
 }
+
+
+
+
+
+
+
+

@@ -4,5 +4,5 @@
 /**
  * 
  */
-module Ch05_array {
+module ch05_array {
 }

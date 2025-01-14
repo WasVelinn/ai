@@ -1,3 +1,0 @@
--- public ArrayList(Emp) 모든 getEmpList
-SELECT*FROM EMP;
--- Quiz에 쓸 query ArrayList(Emp) getEmpList(String schName, String schJob)

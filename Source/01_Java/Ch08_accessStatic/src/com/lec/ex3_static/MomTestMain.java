@@ -1,6 +1,7 @@
 package com.lec.ex3_static;
 
 public class MomTestMain {
+
 	public static void main(String[] args) {
 		Child.method();
 		System.out.println(Child.mom.money);
@@ -11,9 +12,9 @@ public class MomTestMain {
 		child1.takeMoney(1000);
 		child2.takeMoney(1000);
 		child3.takeMoney(1000);
-		System.out.println("첫째 엄마 지갑 : " + Child.mom.money);
-		System.out.println("둘째 엄마 지갑 : " + Child.mom.money);
-		System.out.println("셋째 엄마 지갑 : " + Child.mom.money);
+		System.out.println("첫째 엄마 지갑 : " + child1.mom.money);
+		System.out.println("둘째 엄마 지갑 : " + child2.mom.money);
+		System.out.println("셋째 엄마 지갑 : " + child3.mom.money);
 		System.out.println("엄마 지갑 : " + Child.mom.money);
 	}
 }

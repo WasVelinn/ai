@@ -3,12 +3,12 @@ package com.lec.ex4_product;
 public class Product {
 	private String modelNo; // 모델명
 	private int serialNo; // 객체 고유의 번호
-	static int count = 100;
+	static int count = 100; // 
 	public Product(String modelNo) {
 		this.modelNo = modelNo;
 		serialNo = ++count;
 	}
 	public void infoPrint() {
-		System.out.println("모델명 : " +modelNo+", 시리얼번호 : "+serialNo);
-	}
+		System.out.println("모델명 : " + modelNo + ", 시리얼번호 : " + serialNo);
+	} 
 }

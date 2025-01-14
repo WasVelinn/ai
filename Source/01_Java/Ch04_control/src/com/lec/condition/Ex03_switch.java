@@ -1,5 +1,4 @@
 package com.lec.condition;
-//
 public class Ex03_switch {
 	public static void main(String[] args) {
 		int num=3;
@@ -14,9 +13,9 @@ public class Ex03_switch {
 		case 4:
 			System.out.println("주사위 4"); break;
 		case 5:
-			System.out.println("주사위 5"); break;
-			default :
-				System.out.println("주사위 6");
+			System.out.println("주사위 5"); break; 
+		default :
+			System.out.println("주사위 6");
 		}
 //		if(num==1) {
 //			System.out.println("주사위 1");
@@ -28,7 +27,7 @@ public class Ex03_switch {
 //			System.out.println("주사위 4");
 //		}else if(num==5) {
 //			System.out.println("주사위 5");
-//		}else if(num==6) {
+//		}else {
 //			System.out.println("주사위 6");
 //		}
 	}

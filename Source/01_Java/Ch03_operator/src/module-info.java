@@ -4,5 +4,5 @@
 /**
  * 
  */
-module Ch03_operator {
+module ch03_operator {
 }

@@ -4,12 +4,11 @@ import java.util.Scanner;
 
 public class Quiz1 {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.print("정수를 입력하시오. >");
-		int su = sc.nextInt();
-		String result = (su%2==0)?"짝수입니다.":"홀수입니다.";
-		System.out.println("입력하신 수, "+su+"는 "+result);
-		sc.close();
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("수 입력 : ");
+		int i = scanner.nextInt();
+		int result = i%2;
+		System.out.println((result==0)? "입력한 수는 짝수":"입력한 수는 홀수");
+		scanner.close();
 	}
-
 }

@@ -3,8 +3,8 @@ class PersonInfo{
 	private String name;
 	private String tel;
 	public PersonInfo(String name, String tel) {
-		this.name=name;
-		this.tel=tel;
+		this.name = name;
+		this.tel  = tel;
 	}
 	public String info() {
 		return name + ":" + tel;
@@ -12,7 +12,7 @@ class PersonInfo{
 }
 public class Janmuri {
 	public static void main(String[] args) {
-		PersonInfo p = new PersonInfo("홍길동","010-2222-3333");
+		PersonInfo p = new PersonInfo("홍길동","010-9999-999");
 		System.out.println(p.info());
 	}
 }

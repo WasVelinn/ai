@@ -1,5 +1,0 @@
-package com.lec.ch12.service;
-
-public interface Service {
-
-}

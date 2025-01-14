@@ -1,30 +1,31 @@
 package com.lec.ex1_student;
-// 데이터 : name(String), kor(int), eng(int), math(int), tot(int), avg(double)
-// 생성자 : new Student("정우성", 90, 90, 90 )
+// 데이터 : name(String), kor(int), eng(int), mat(int), tot(int), avg(double)
+// 생성자 : new Student("정우성", 90,90,90)
 // 메소드 : infoPrint(), infoString()
 public class Student {
 	private String name;
 	private int kor;
 	private int eng;
-	private int math;
+	private int mat;
 	private int tot;
 	private double avg;
 	public Student() {} // 디폴트 생성자
-	public Student(String name, int kor, int eng, int math) {
+	public Student(String name, int kor, int eng, int mat) {
 		this.name = name;
 		this.kor = kor;
 		this.eng = eng;
-		this.math = math;
-		tot = kor + eng + math;
-		avg = tot/3.;
+		this.mat = mat;
+		tot = kor + eng + mat;
+		avg = tot/3.0;
+//		avg = (double)tot/3;
 	}
 	public void infoPrint() {
 		// \t정우성\t100\t100\t100\t300\t100.0
-		// \t정우성\t 90\t 90\t 90\t270\t90.0
-		System.out.printf("\t%s\t%3d\t%3d\t%3d\t%3d\t%5.1f", name, kor, eng, math, tot, avg);
+		// \t정우성\t 90\t 90\t100\t300\t100.0
+		System.out.printf("\t%s\t%3d\t%3d\t%3d\t%3d\t%5.1f", name, kor, eng, mat, tot, avg);
 	}
 	public String infoString() {
-		return String.format("\t%s\t%3d\t%3d\t%3d\t%3d\t%5.1f", name, kor, eng, math, tot, avg);
+		return String.format("\t%s\t%3d\t%3d\t%3d\t%3d\t%5.1f", name, kor, eng, mat, tot, avg);
 	}
 	public String getName() {
 		return name;
@@ -44,11 +45,11 @@ public class Student {
 	public void setEng(int eng) {
 		this.eng = eng;
 	}
-	public int getMath() {
-		return math;
+	public int getMat() {
+		return mat;
 	}
-	public void setMath(int math) {
-		this.math = math;
+	public void setMat(int mat) {
+		this.mat = mat;
 	}
 	public int getTot() {
 		return tot;
@@ -63,3 +64,13 @@ public class Student {
 		this.avg = avg;
 	}
 }
+
+
+
+
+
+
+
+
+
+

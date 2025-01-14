@@ -8,7 +8,7 @@ public class SalaryEmployee extends Employee{
 	}
 	@Override
 	public int computePay() {
-		return annualSalary/14;
+		// TODO Auto-generated method stub
+		return annualSalary / 14 ;
 	}
-	
 }

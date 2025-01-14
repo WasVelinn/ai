@@ -1,9 +1,0 @@
-#Tomcat publish data
-#Fri Nov 01 14:42:05 KST 2024
-org.eclipse.jst.jee.server\:ch12_mvcPerson=D\:\\STUDENTS\\KIMCHEOLMIN\\ai\\IDE\\apache-tomcat-10.1.31\\wtpwebapps\\ch12_mvcPerson
-org.eclipse.jst.jee.server\:ch09_forward=D\:\\STUDENTS\\KIMCHEOLMIN\\ai\\IDE\\apache-tomcat-10.1.31\\wtpwebapps\\ch09_forward
-org.eclipse.jst.jee.server\:ch07_db=D\:\\STUDENTS\\KIMCHEOLMIN\\ai\\IDE\\apache-tomcat-10.1.31\\wtpwebapps\\ch07_db
-org.eclipse.jst.jee.server\:ch10_jstl=D\:\\STUDENTS\\KIMCHEOLMIN\\ai\\IDE\\apache-tomcat-10.1.31\\wtpwebapps\\ch10_jstl
-org.eclipse.jst.jee.server\:ch12_mvcMember=D\:\\STUDENTS\\KIMCHEOLMIN\\ai\\IDE\\apache-tomcat-10.1.31\\wtpwebapps\\ch12_mvcMember
-org.eclipse.jst.jee.server\:ch08_el=D\:\\STUDENTS\\KIMCHEOLMIN\\ai\\IDE\\apache-tomcat-10.1.31\\wtpwebapps\\ch08_el
-org.eclipse.jst.jee.server\:ch11=D\:\\STUDENTS\\KIMCHEOLMIN\\ai\\IDE\\apache-tomcat-10.1.31\\wtpwebapps\\ch11

@@ -6,6 +6,6 @@ public class ChildClassTestMain {
 		System.out.println(child.cStr);
 		System.out.println(child.pStr);
 		child.getPapaName();
-		child.getMamaName();
+		child.getMamiName();
 	}
 }

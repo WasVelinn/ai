@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servers>
-  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v10.1 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v10.1 Server at localhost" name="Tomcat v10.1 Server at localhost" runtime-id="Apache Tomcat v10.1" saveSeparateContextFiles="true" server-type="org.eclipse.jst.server.tomcat.101" server-type-id="org.eclipse.jst.server.tomcat.101" start-timeout="60" stop-timeout="15" testEnvironment="false" timestamp="8">
-    <list key="modules" value0="ch07_db::org.eclipse.jst.jee.server:ch07_db::jst.web::6.0" value1="ch08_el::org.eclipse.jst.jee.server:ch08_el::jst.web::6.0" value2="ch09_forward::org.eclipse.jst.jee.server:ch09_forward::jst.web::6.0" value3="ch10_jstl::org.eclipse.jst.jee.server:ch10_jstl::jst.web::6.0" value4="ch11::org.eclipse.jst.jee.server:ch11::jst.web::6.0" value5="ch12_mvcMember::org.eclipse.jst.jee.server:ch12_mvcMember::jst.web::6.0" value6="ch12_mvcPerson::org.eclipse.jst.jee.server:ch12_mvcPerson::jst.web::6.0"/>
-  </server>
-</servers>

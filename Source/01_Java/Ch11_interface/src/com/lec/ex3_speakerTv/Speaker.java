@@ -8,50 +8,56 @@ public class Speaker implements IVolume {
 		volumeLevel = 3;
 	}
 	@Override
-	public void volumeUp() {
-		if(volumeLevel<MAX_VOLUME) {
+	public void volumeUp() { // 1씩 증가
+		if(volumeLevel < MAX_VOLUME) {
 			volumeLevel++;
-			System.out.println("스피커 볼륨을 1올려 현재 볼륨은 "+volumeLevel);
+			System.out.println("스피커 볼륨을 1올려 현재 볼륨은 " + volumeLevel);
 		}else {
-			System.out.println("스피커 볼륨이 최대치("+MAX_VOLUME+")여서 올리지 못했습니다.");
+			System.out.println("스피커 볼륨이 최대치("+MAX_VOLUME+")여서 올리지 못했습니다");
 		}
 	}
+	@Override
+	public void volumeUp(int i) { // 볼륨을 i씩 up
+		if(volumeLevel == MAX_VOLUME) {
+			System.out.println("스피커 볼륨이 최대치(" + MAX_VOLUME + ")이여서 못 올려요");
+		}else if( (volumeLevel+i) <= MAX_VOLUME) {
+			volumeLevel += i;
+			System.out.println("스피커 볼륨을 "+i+"만큼 올려 현재 볼륨은 " + volumeLevel);
+		}else {
+			int temp = MAX_VOLUME - volumeLevel; // 현재 증가 가능한 정도
+			volumeLevel = MAX_VOLUME;
+			System.out.println("스피커 볼륨을 "+ temp + "만큼 올려 최대치입니다");
+		}//if
+	}//volumeUp
+	@Override
+	public void volumeDown(int i) { // 볼륨을 i씩 Down
+		if(volumeLevel == MIN_VOLUME) {
+			System.out.println("스피커 볼륨이 최소치(" + MIN_VOLUME + ")이여서 못 올려요");
+		}else if(volumeLevel-i >= MIN_VOLUME) {
+			volumeLevel -= i;
+			System.out.println("스피커 볼륨을 " + i +"만큼 내려 현재 볼륨은 " + volumeLevel);
+		}else { // 현재 볼륨=3, i=5
+			int temp = volumeLevel - MIN_VOLUME; // 현재 감소 정도
+			volumeLevel = MIN_VOLUME;
+			System.out.println("스피커 볼륨을 " + temp +"만큼 내려 최소치입니다");
+		}
+		
+	}//volumeDown
 	@Override
 	public void volumeDown() {
-		if(volumeLevel>MIN_VOLUME) {
+		if(volumeLevel > MIN_VOLUME ) {
 			volumeLevel--;
-			System.out.println("스피커 볼륨을 1내려 현재 볼륨은 "+volumeLevel);
+			System.out.println("스피커 볼륨을 1만큼 내려 현재 볼륨은 " + volumeLevel);
 		}else {
-			System.out.println("스피커 볼륨이 최소치("+MIN_VOLUME+")여서 내리지 못했습니다.");
+			System.out.println("스피커 볼륨이 최소치(" + MIN_VOLUME +")여서 내리지 못했습니다");
 		}//if
-	}//volumedown
-	
-	public void volumeUp(int i) { // 볼륨을 5씩 up
-		if(volumeLevel==MAX_VOLUME) {
-			System.out.println("스피커 볼륨이 최대치("+MAX_VOLUME+")이여서 못 올려요.");
-		}
-		if((volumeLevel+i)<=MAX_VOLUME) {
-			volumeLevel+=i;
-			System.out.println("스피커 볼륨을 "+i+"만큼 올려 현재 볼륨은 "+volumeLevel);
-		}else {
-			int temp = MAX_VOLUME-volumeLevel;
-			volumeLevel = MAX_VOLUME;
-			System.out.println("스피커 볼륨을 "+temp+"만큼 올려 최대치 입니다.");
-		}
-	}
-	@Override
-	public void volumeDown(int i) {
-		if(volumeLevel==MIN_VOLUME) {
-			System.out.println("스피커 볼륨이 최소치("+MIN_VOLUME+")이여서 못 올려요.");
-		}
-		if((volumeLevel-i)>=MIN_VOLUME) {
-			volumeLevel-=i;
-			System.out.println("스피커 볼륨을 "+i+"만큼 내려 현재 볼륨은 "+volumeLevel);
-		}else {
-			int temp = volumeLevel-MIN_VOLUME;
-			volumeLevel=MIN_VOLUME;
-			System.out.println("스피커 볼륨을 "+temp+"만큼 내려 최소치 입니다.");
-		}//if
-	}//volumedown
-
+	}//volumeDown
 }//class
+
+
+
+
+
+
+
+
